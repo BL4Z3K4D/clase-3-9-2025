@@ -10,5 +10,5 @@ public class Developer(string? firstName, string? lastName)
     /// </summary>
     /// <returns></returns>
     public string GetFullName() => $"{FirstName} {LastName}".Trim();
-    public bool IsAnyNameEmpty() => string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName);
+    public bool HasAnyNameEmpty() => string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName);
 }
