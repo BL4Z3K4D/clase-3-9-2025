@@ -2,7 +2,7 @@
 
 public class Developer(string? firstName, string? lastName)
 {
-    public Guid Id {get; } = Guid. NewGuid(); 
+    public Guid Id {get; } = Guid.NewGuid(); 
     public string FirstName { get; } = string.IsNullOrWhiteSpace(firstName) ?string.Empty : firstName.Trim();
     public string LastName { get; } = string.IsNullOrWhiteSpace(lastName) ? string.Empty : lastName.Trim();
     /// <summary>
